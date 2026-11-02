@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <label>UserName</label>
+        <input type="text" id="username" placeholder="Enter your username">
+        <br>
+        <br>
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter your password">
+        <br>
+        <br>
+        <button type="submit" onClick="LoginUser()" id="login">Login</button>
+        <h3 id="messgae"></h3>
+</form>
+        <script>
+            function LoginUser(){
+              const user=Document.getElementById("username").value;
+              const pass=Document.getElementById("password").value;
+                if(user == "admin" && pass == 1234){
+                   const element=document.getElementById("messgae")
+                     element.innerHTML="Login Success";
+                }
+                else{
+                    const element=document.getElementById("messgae");
+                    element.innerHTML="Login Failed";
+                }
+            }
+        </script>
+    
+</body>
+</html>
